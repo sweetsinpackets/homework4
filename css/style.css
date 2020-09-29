@@ -89,7 +89,8 @@ footer{
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
   grid-template-rows: repeat(5, auto);
-  grid-row-gap: 15px;
+  /* grid-row-gap: 15px; it's quite old, use row-gap*/
+  row-gap: 15px;
 }
 
 header{
