@@ -37,7 +37,7 @@ nav a{
 /*Write selector/rule property to add an underline when
 links in the navigation are in the hover or focus state.*/
 
-nav ul li a:hover {
+nav a:hover {
   text-decoration: underline;
 }
 
@@ -87,6 +87,7 @@ footer{
 .container{
   /*Your Code Here*/
   display: grid;
+  -webkit-grid-template-columns: 1fr 5fr 1fr;
   grid-template-columns: 1fr 5fr 1fr;
   /* I don't know why, but it can't pass without it */
   -webkit-grid-template-rows: repeat(5, auto);
@@ -173,6 +174,7 @@ background-color: rgba(255, 255, 255, .8);
 
   .container{
     /*Your code here:*/
+    -webkit-grid-template-columns: 50px, auto, 500px, auto, 50px;
     grid-template-columns: 50px, auto, 500px, auto, 50px;
     -webkit-grid-template-rows: repeat(5, 400px);
     grid-template-rows: repeat(5, 400px);
