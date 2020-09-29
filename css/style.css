@@ -88,7 +88,8 @@ footer{
   /*Your Code Here*/
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  grid-template-rows: repeat(5, auto);
+  -webkit-grid-template-rows: repeat(5, auto);
+  grid-template-rows: auto, auto, auto, auto, auto;
   /* grid-row-gap: 15px; it's quite old, use row-gap*/
   row-gap: 15px;
 }
@@ -172,7 +173,8 @@ background-color: rgba(255, 255, 255, .8);
   .container{
     /*Your code here:*/
     grid-template-columns: 50px, auto, 500px, auto, 50px;
-    grid-template-rows: 400px, 400px, 400px, 400px, 400px;
+    -webkit-grid-template-rows: repeat(5, 400px);
+    grid-template-rows: repeat(5, 400px);
   }
 
   .about, .clients, .method-image, .contact-image{
