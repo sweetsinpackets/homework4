@@ -87,10 +87,7 @@ footer{
 .container{
   /*Your Code Here*/
   display: grid;
-  -webkit-grid-template-columns: 1fr 5fr 1fr;
   grid-template-columns: 1fr 5fr 1fr;
-  /* I don't know why, but it can't pass without it */
-  -webkit-grid-template-rows: repeat(5, auto);
   grid-template-rows: auto, auto, auto, auto, auto;
   /* grid-row-gap: 15px; it's quite old, use row-gap*/
   row-gap: 15px;
@@ -174,9 +171,7 @@ background-color: rgba(255, 255, 255, .8);
 
   .container{
     /*Your code here:*/
-    -webkit-grid-template-columns: 50px, auto, 500px, auto, 50px;
     grid-template-columns: 50px, auto, 500px, auto, 50px;
-    -webkit-grid-template-rows: repeat(5, 400px);
     grid-template-rows: repeat(5, 400px);
   }
 
